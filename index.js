@@ -2,6 +2,7 @@ const colourPicker = document.querySelector('.input-colour');
 const modePicker = document.querySelector('.input-selector');
 const btn = document.querySelector('.input-submit');
 const colourDisplay = document.querySelectorAll('.display-colour');
+const colorCode = document.querySelectorAll('.display-code');
 
 const fetchColour = () => {
 
@@ -14,8 +15,9 @@ const fetchColour = () => {
     console.log(colourDisplay, data);
     for(let i = 0; i<data.colors.length; i++){
       colourDisplay[i].innerHTML = `<img src=\'${data.colors[i].image.named}\'>`
-      console.log(colourDisplay);
+      colorCode[i].innerHTML = `<p> ${data.colors[i].hex.value}</p>`
     }
+
   })
 }
 

@@ -22,13 +22,15 @@ max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: baseline;
+  height: 20%;
 }
 
 .input-colour,
 .input-selector,
 .input-submit {
  margin: 1em;
-  font-size: 1rem;
+ margin-right: 4em;
+font-size: 1rem;
 }
 
 .input-selector{
@@ -39,7 +41,7 @@ max-width: 100%;
 
 .input-colour {
   border: 0;
-}
+ }
 
 .input-submit {
   background: #fff;
@@ -49,9 +51,8 @@ max-width: 100%;
 }
 
 .display{
-  background: yellow;
   display: flex;
-  height: 100vh;
+  height: 91vh;
 }
 
 .display-colour,
@@ -64,6 +65,14 @@ max-width: 100%;
 
 .display-info {
   width: 16.666%;
+}
+
+.display-colour {
+  height: 95%;
+}
+
+.display-code {
+  height: 5%;
 }
 
 
